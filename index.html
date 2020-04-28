@@ -3,8 +3,52 @@
 <head>
     <meta charset="utf-8" />
     <title>tmrekk.dev</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1b2f1e94cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <p>Hello World</p>
+  <div class="container">
+    <div class="left-div">
+      <h2>tmrekk.dev</h2>
+      <ul class="list-item">
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="https://blog.tmrekk.dev">Blog</a>
+        </li>
+      </ul>
+      <ul class="social-icon">
+        <li>
+          <a href="https://github.com/tmrekk121" target="_blank" rel="noopener noreferrer" class="github-icon-link">
+            <i class="fab fa-github fa-2x fa-fw" style="color:#414141;"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/tmrekk121" target="_blank" rel="noopener noreferrer" class="twitter-icon-link">
+            <i class="fab fa-twitter fa-2x fa-fw" style="color:#414141;"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <img src="images/sea.jpg" alt="Sea" id="mypic" class="sea-photo">
+  </div>
 </body>
+<script>
+  var pics_src = new Array("images/sea.jpg","images/leaf.jpg","images/flower.jpg");
+  var num = -1;
+
+  slideshow_timer();
+
+  function slideshow_timer(){
+      if (num == 2){
+          num = 0;
+      }
+      else {
+          num ++;
+      }
+      document.getElementById("mypic").src=pics_src[num];
+      setTimeout("slideshow_timer()",5000);
+  }
+</script>
 </html>
