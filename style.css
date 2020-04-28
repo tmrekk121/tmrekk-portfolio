@@ -55,6 +55,14 @@ h2 {
   display: inline-block;
 }
 
+.social-icon a{
+  color: #414141;
+}
+
+.social-icon a:hover{
+  color: #339999;
+}
+
 .sea-photo {
   width: 60%;
   border-radius: 2%;
