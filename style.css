@@ -72,6 +72,10 @@ h2 {
   body {
     margin: 20% 10%;
   }
+  .container {
+    width: 100%;
+    height: auto;
+  }
   .sea-photo {
     width: 60%;
     height: auto;
@@ -81,6 +85,10 @@ h2 {
 @media screen and (max-width: 896px) {
   body {
     margin: 20% 10%;
+  }
+  .container {
+    width: 100%;
+    height: auto;
   }
   .sea-photo {
     width: 70%;
