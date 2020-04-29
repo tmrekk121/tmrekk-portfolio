@@ -1,6 +1,7 @@
 const about = document.getElementById('about');
 
-const about_path = "about.html"
+const about_path = "about.html";
+const works_path = "works.html";
 
 about.addEventListener('click', {file_path: about_path, handleEvent: fetchHTML});
 
