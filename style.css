@@ -65,6 +65,7 @@ h2 {
 
 .sea-photo {
   width: 60%;
+  height: 50%;
   border-radius: 2%;
 }
 
@@ -72,19 +73,11 @@ h2 {
   body {
     margin: 20% 10%;
   }
-  .container {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media screen and (max-width: 896px) {
   body {
-    margin: 20% 10%;
-  }
-  .container {
-    width: 100%;
-    height: auto;
+    margin: 30% 10%;
   }
 }
 
