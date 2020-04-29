@@ -6,6 +6,7 @@ const works_path = "works.html";
 about.addEventListener('click', {file_path: about_path, handleEvent: fetchHTML});
 
 function fetchHTML(e) {
+    console.log(this.file_path);
     var xmlhr = new XMLHttpRequest();
     xmlhr.onreadystatechange = function() {
         if (xmlhr.readyState == 4 && xmlhr.status==200) {
