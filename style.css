@@ -73,11 +73,35 @@ h2 {
   body {
     margin: 20% 10%;
   }
+  h2 {
+    font-size: 35px;
+    color: #414141;
+  }
+  .list-item a{
+    font-size: 30px;
+  }
+  .sea-photo {
+    width: 65%;
+    height: 60%;
+    border-radius: 2%;
+  }
 }
 
 @media screen and (max-width: 896px) {
   body {
-    margin: 30% 10%;
+    margin: 30% 5%;
+  }
+  h2 {
+    font-size: 33px;
+    color: #414141;
+  }
+  .list-item a{
+    font-size: 28px;
+  }
+  .sea-photo {
+    width: 65%;
+    height: 60%;
+    border-radius: 2%;
   }
 }
 
