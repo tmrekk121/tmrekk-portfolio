@@ -10,7 +10,7 @@ function fetchHTML(e) {
     xmlhr.onreadystatechange = function() {
         if (xmlhr.readyState == 4 && xmlhr.status==200) {
             var content = xmlhr.responseText;
-            document.getElementById("slide").setAttribute("style", "display: none;");
+            // document.getElementById("slide").setAttribute("style", "display: none;");
             console.log(this.file_path);
             console.log(content);
             document.getElementById("item-content").innerHTML = content;
