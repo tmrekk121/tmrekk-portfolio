@@ -42,7 +42,7 @@ h2 {
 .list-item a{
   color: #8F8F8F;
   font-size: 25px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   text-decoration: none;
 }
 
@@ -111,6 +111,18 @@ h2 {
   }
 }
 
+.bottom-menu {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-menu .introduce {
+  margin-top: 5%;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
 @media screen and (max-width: 1024px) {
   body {
     margin: 20% 10%;
@@ -168,5 +180,13 @@ h2 {
   .slide img {
     width: 100%;
     left: 0;
+  }
+
+  .slide {
+    height: 300px;
+  }
+
+  .okinawa-scenery {
+    display: none;
   }
 }
