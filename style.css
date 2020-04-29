@@ -63,10 +63,43 @@ h2 {
   color: #339999;
 }
 
-.sea-photo {
-  width: 60%;
-  height: 50%;
-  border-radius: 2%;
+.slide {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slide img {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  width: 70%;
+  height: auto;
+  opacity: 0;
+  animation :slideshow 14s linear infinite;
+}
+
+.slide img:last-child{
+  animation-delay: 7s;
+}
+
+@keyframes slideshow {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  45%{
+    opacity: 1;
+  }
+  55%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -79,11 +112,6 @@ h2 {
   }
   .list-item a{
     font-size: 30px;
-  }
-  .sea-photo {
-    width: 65%;
-    height: 60%;
-    border-radius: 2%;
   }
 }
 
@@ -98,14 +126,17 @@ h2 {
   .list-item a{
     font-size: 28px;
   }
-  .sea-photo {
-    width: 65%;
-    height: 60%;
-    border-radius: 2%;
-  }
 }
 
 @media screen and (max-width: 480px) { 
+  h2 {
+    font-size: 18px;
+    color: #414141;
+  }
+  .list-item a{
+    font-size: 13px;
+  }
+
   .container {
     margin-top: 15%;
     display: block;
@@ -117,9 +148,4 @@ h2 {
     display: inline-block;
   }
 
-  .sea-photo {
-    width: 100%;
-    margin-top: 20%;
-    border-radius: 2%;
-  }
 }

@@ -41,24 +41,10 @@
           </li>
         </ul>
       </div>
-      <img src="images/flower.jpg" alt="Sea" id="mypic" class="sea-photo">
+      <div class="slide">
+        <img src="images/flower.jpg" alt="">
+        <img src="images/leaf.jpg" alt="">
+      </div>
     </div>
-    <script>
-      var pics_src = new Array("images/leaf.jpg","images/flower.jpg");
-      var num = -1;
-
-      slideshow_timer();
-
-      function slideshow_timer(){
-          if (num == 1){
-              num = 0;
-          }
-          else {
-              num ++;
-          }
-          document.getElementById("mypic").src=pics_src[num];
-          setTimeout("slideshow_timer()",5000);
-      }
-    </script>
   </body>
 </html>
