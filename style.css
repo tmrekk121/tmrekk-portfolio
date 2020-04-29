@@ -138,16 +138,19 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    margin: 5% 5%;
+  }
   h2 {
-    font-size: 18px;
+    font-size: 22px;
     color: #414141;
   }
   .list-item a{
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .container {
-    margin-top: 15%;
+    margin-top: 5%;
     display: block;
     text-align: center;
   }
@@ -157,7 +160,13 @@ h2 {
     display: inline-block;
   }
 
+  .social-icon li{
+    font-size: 10px;
+    padding: 0 5%;
+  }
+
   .slide img {
-    left: 13%;
+    width: 100%;
+    left: 0;
   }
 }
