@@ -51,6 +51,20 @@ h2 {
   text-decoration: underline;
 }
 
+.list-item p{
+  color: #8F8F8F;
+  font-size: 27px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.list-item p:hover{
+  color: #414141;
+  text-decoration: underline;
+}
+
+
 .social-icon {
   padding: 0;
 }
