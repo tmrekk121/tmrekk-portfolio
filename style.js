@@ -8,10 +8,10 @@ about.addEventListener('click', {file_path: about_path, handleEvent: fetchHTML})
 works.addEventListener('click', {file_path: works_path, handleEvent: fetchHTML});
 
 function fetchHTML(e) {
-    var xmlhr = new XMLHttpRequest();
+    let xmlhr = new XMLHttpRequest();
     xmlhr.onreadystatechange = function() {
         if (xmlhr.readyState == 4 && xmlhr.status==200) {
-            var content = xmlhr.responseText;
+            let content = xmlhr.responseText;
             document.getElementById("slide").setAttribute("style", "display: none;");
             document.getElementById("item-content").setAttribute("style", "display: block;");
             console.log(this.file_path);
