@@ -67,3 +67,52 @@ h2 {
   width: 60%;
   border-radius: 2%;
 }
+
+@media screen and (max-width: 480px) { 
+  .container {
+    margin-top: 15%;
+    display: block;
+    text-align: center;
+  }
+  h2 {
+    color: #414141;
+  }
+  
+  .list-item {
+   padding: 0;
+  }
+  
+  .list-item li{
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .list-item a{
+    color: #8F8F8F;
+    text-decoration: none;
+  }
+  
+  .list-item a:hover{
+    color: #414141;
+    text-decoration: underline;
+  }
+  
+  .social-icon {
+    padding: 0;
+  }
+  
+  .social-icon li{
+    list-style: none;
+    display: inline-block;
+  }
+
+  .social-icon a{
+    color: #414141;
+  }
+
+  .sea-photo {
+    width: 100%;
+    margin-top: 20%;
+    border-radius: 2%;
+  }
+}
