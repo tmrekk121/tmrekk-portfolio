@@ -14,6 +14,7 @@ function fetchHTML(e) {
             console.log(this.file_path);
             console.log(content);
             document.getElementById("item-content").innerHTML = content;
+            document.getElementById("item-content").setAttribute("style", "width: 100%; height: 500px;");
         }
     }
     xmlhr.open("GET", this.file_path, true);
