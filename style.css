@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 body {
+  font-family: 'Pathway Gothic One', sans-serif;
   background-color: #FDFAF8;
   margin: 0 15%;
   animation: fadeIn 2s ease 0s 1 normal;
@@ -19,12 +20,13 @@ body {
 
 
 .container {
-  margin-top: 15%;
+  margin-top: 10%;
   display: flex;
   justify-content: space-around;
 }
 
 h2 {
+  font-size: 40px;
   color: #414141;
 }
 
@@ -34,10 +36,13 @@ h2 {
 
 .list-item li{
   list-style: none;
+  margin-bottom: 8%;
 }
 
 .list-item a{
   color: #8F8F8F;
+  font-size: 25px;
+  letter-spacing: 4px;
   text-decoration: none;
 }
 
@@ -60,7 +65,7 @@ h2 {
 }
 
 .social-icon a:hover{
-  color: #339999;
+  color: #24292E;
 }
 
 .slide {
@@ -72,12 +77,16 @@ h2 {
 
 .slide img {
   position: absolute;
-  top: 5%;
-  left: 20%;
+  top: 3%;
+  left: 18%;
   width: 80%;
   height: auto;
   opacity: 0;
   animation :slideshow 14s linear infinite;
+  padding:7px;
+  border:1px solid #ccc;
+  background:#fff;
+  box-shadow: 1px 1px 5px rgba(20,20,20,0.2);
 }
 
 .slide img:last-child{
