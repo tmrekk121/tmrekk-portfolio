@@ -76,10 +76,6 @@ h2 {
     width: 100%;
     height: auto;
   }
-  .sea-photo {
-    width: 60%;
-    height: auto;
-  }
 }
 
 @media screen and (max-width: 896px) {
@@ -88,10 +84,6 @@ h2 {
   }
   .container {
     width: 100%;
-    height: auto;
-  }
-  .sea-photo {
-    width: 70%;
     height: auto;
   }
 }
