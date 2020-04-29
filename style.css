@@ -134,6 +134,9 @@ h2 {
   .list-item a{
     font-size: 30px;
   }
+  .slide {
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 896px) {
@@ -151,12 +154,12 @@ h2 {
 
 @media screen and (max-width: 480px) {
   body {
-    margin: 5% 5%;
+    margin: 9% 5%;
   }
   h2 {
-    font-size: 22px;
-    color: #414141;
+    font-size: 30px;
   }
+
   .list-item a{
     font-size: 16px;
   }
@@ -174,16 +177,12 @@ h2 {
 
   .social-icon li{
     font-size: 10px;
-    padding: 0 5%;
+    padding: 3% 5%;
   }
 
   .slide img {
     width: 100%;
     left: 0;
-  }
-
-  .slide {
-    height: 300px;
   }
 
   .okinawa-scenery {
