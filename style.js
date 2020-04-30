@@ -14,6 +14,7 @@ function fetchHTML(e) {
     xmlhr.onreadystatechange = function() {
         if (xmlhr.readyState == 4 && xmlhr.status==200) {
             let content = xmlhr.responseText;
+            document.getElementById("item-content").setAttribute("style", "display: none;");
             document.getElementById("slide").setAttribute("style", "display: none;");
             document.getElementById("okinawa-scenery").setAttribute("style", "display: none;");
             document.getElementById("item-content").setAttribute("style", "display: block;");
