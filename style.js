@@ -16,7 +16,6 @@ function fetchHTML(e) {
             let content = xmlhr.responseText;
             document.getElementById("slide").setAttribute("style", "display: none;");
             document.getElementById("okinawa-scenery").setAttribute("style", "display: none;");
-            document.getElementById("item-content").setAttribute("style", "display: none;");
             document.getElementById("item-content").setAttribute("style", "display: block;");
             document.getElementById("item-content").innerHTML = content;
         }
