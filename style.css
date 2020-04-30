@@ -18,6 +18,16 @@ body {
   100% {opacity: 1}
 }
 
+@keyframes fadeOut {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+
 .container {
   margin-top: 10%;
   display: flex;
