@@ -229,11 +229,13 @@ h1 {
 }
 
 .about-div a{
+  font-size: 22px;
   color: #8F8F8F;
   text-decoration: none;
 }
 
 .about-div a:hover {
+  color: #101325;
   text-decoration: underline;
 }
 
