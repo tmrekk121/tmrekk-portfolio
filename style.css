@@ -271,6 +271,10 @@ h1 {
     display: none;
   }
   /* works.html */
+
+  #item-content {
+    width: 95%;
+  }
   .work-div {
     width: 100%;
     display: block;
