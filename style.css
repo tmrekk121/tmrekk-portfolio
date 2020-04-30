@@ -197,11 +197,21 @@ h1 {
 /* about.html */
 .about-div {
   width: 100%;
-  margin-left: 10%;
+  margin-left: 20%;
 }
 .about-div h2{
   font-weight: 100;
+  font-size: 40px;
   color: #101325;
+  margin-bottom: 0;
+}
+
+.about-div #map-pin{
+  margin-top: 1%;
+}
+
+.about-div .about-p{
+
 }
 
 .about-div p{
@@ -210,6 +220,8 @@ h1 {
 
 .about-div .sub-title {
   color: #101325;
+  font-size: 25px;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1024px) {
