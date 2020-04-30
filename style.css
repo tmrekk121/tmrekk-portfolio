@@ -260,6 +260,10 @@ h1 {
   #okinawa-scenery {
     display: none;
   }
+  /* works.html */
+  .work-div {
+    display: block;
+  }
 }
 
 
