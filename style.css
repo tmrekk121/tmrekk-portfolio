@@ -163,7 +163,7 @@ body {
   font-family: 'Caveat', cursive;
 }
 
-/* about.html */
+/* works.html */
 
 h1 {
   text-align: center;
@@ -194,6 +194,23 @@ h1 {
   color: #101325;
 }
 
+/* about.html */
+.about-div {
+  width: 100%;
+  margin-left: 10%;
+}
+.about-div h2{
+  font-weight: 100;
+  color: #101325;
+}
+
+.about-div p{
+  color: #8F8F8F;
+}
+
+.about-div .sub-title {
+  color: #101325;
+}
 
 @media screen and (max-width: 1024px) {
   body {
