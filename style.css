@@ -123,9 +123,9 @@ body {
   height: auto;
   opacity: 0;
   animation :slideshow 14s linear infinite;
-  padding:7px;
-  border:1px solid #ccc;
-  background:#fff;
+  padding: 7px;
+  border: 1px solid #ccc;
+  background: #fff;
   box-shadow: 1px 1px 5px rgba(20,20,20,0.2);
 }
 
@@ -167,6 +167,31 @@ body {
 
 h1 {
   text-align: center;
+}
+
+.work-div {
+  width: 35%;
+  height: auto;
+  display: inline-block;
+  margin: 5% 5%;
+}
+
+.work-div .work-img {
+  width: 100%;
+  height: 30%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(20,20,20,0.2);
+}
+
+.work-div p {
+  text-align: center;
+  color: #8F8F8F;
+}
+
+.work-div .work-title {
+  color: #101325;
 }
 
 
