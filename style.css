@@ -339,6 +339,10 @@ h1 {
     margin-left: 0;
   }
 
+  .about-div ul{
+    margin: 0 auto;
+  }
+
   .about-div li{
     text-align: left;
   }
