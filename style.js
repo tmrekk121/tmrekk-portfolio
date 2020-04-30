@@ -15,6 +15,7 @@ function fetchHTML(e) {
         if (xmlhr.readyState == 4 && xmlhr.status==200) {
             let content = xmlhr.responseText;
             document.getElementById("slide").setAttribute("style", "display: none;");
+            document.getElementById("okinawa-scenery").setAttribute("style", "display: none;");
             document.getElementById("item-content").setAttribute("style", "display: block;");
             console.log(this.file_path);
             console.log(content);
@@ -28,4 +29,5 @@ function fetchHTML(e) {
 function transTop() {
     document.getElementById("item-content").setAttribute("style", "display: none;");
     document.getElementById("slide").setAttribute("style", "display: block;");
+    document.getElementById("okinawa-scenery").setAttribute("style", "display: block;");
 }

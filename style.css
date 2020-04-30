@@ -142,6 +142,9 @@ body {
   font-family: 'Caveat', cursive;
 }
 
+/* about.html */
+
+
 @media screen and (max-width: 1024px) {
   body {
     margin: 20% 10%;
@@ -204,7 +207,9 @@ body {
     left: 0;
   }
 
-  .okinawa-scenery {
+  #okinawa-scenery {
     display: none;
   }
 }
+
+
