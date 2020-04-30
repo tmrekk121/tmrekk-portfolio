@@ -16,7 +16,7 @@ function fetchHTML(e) {
             let content = xmlhr.responseText;
             document.getElementById("slide").setAttribute("style", "animation: fadeOut 2s ease 0s 1 normal;\
             -webkit-animation: fadeOut 2s ease 0s 1 normal;");
-            document.getElementById("slide").setAttribute("style", "display: none;");
+            document.getElementById("slide").setAttribute("style", "width: 0; height: 0;");
             document.getElementById("okinawa-scenery").setAttribute("style", "display: none;");
             document.getElementById("item-content").setAttribute("style", "display: block;");
             console.log(this.file_path);
