@@ -14,9 +14,8 @@ function fetchHTML(e) {
     xmlhr.onreadystatechange = function() {
         if (xmlhr.readyState == 4 && xmlhr.status==200) {
             let content = xmlhr.responseText;
-            document.getElementById("slide").setAttribute("style", "animation: fadeOut 2s ease 0s 1 normal;\
+            document.getElementById("slide").setAttribute("style", "width: 0; height: 0; animation: fadeOut 2s ease 0s 1 normal;\
             -webkit-animation: fadeOut 2s ease 0s 1 normal;");
-            document.getElementById("slide").setAttribute("style", "width: 0; height: 0;");
             document.getElementById("okinawa-scenery").setAttribute("style", "display: none;");
             document.getElementById("item-content").setAttribute("style", "display: block;");
             console.log(this.file_path);
@@ -29,9 +28,8 @@ function fetchHTML(e) {
 }
 
 function transTop() {
-  document.getElementById("item-content").setAttribute("style", "animation: fadeOut 2s ease 0s 1 normal;\
+  document.getElementById("item-content").setAttribute("style", "width: 0; height: 0; animation: fadeOut 2s ease 0s 1 normal;\
   -webkit-animation: fadeOut 2s ease 0s 1 normal;");
-    document.getElementById("item-content").setAttribute("style", "width: 0; height: 0;");
     document.getElementById("slide").setAttribute("style", "display: block;");
     document.getElementById("okinawa-scenery").setAttribute("style", "display: block;");
 }

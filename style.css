@@ -19,12 +19,14 @@ body {
 }
 
 @keyframes fadeOut {
-  0% {opacity: 1}
+  0% {opacity: 1; height: 500px;}
+  95% {height:500px;}
   100% {opacity: 0}
 }
 
 @-webkit-keyframes fadeOut {
-  0% {opacity: 1}
+  0% {opacity: 1; height: 500px;}
+  95% {height:500px;}
   100% {opacity: 0}
 }
 
