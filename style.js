@@ -7,7 +7,7 @@ const works_path = "works.html";
 
 about.addEventListener('click', {file_path: about_path, handleEvent: fetchHTML});
 works.addEventListener('click', {file_path: works_path, handleEvent: fetchHTML});
-works.addEventListener('click', transTop);
+title.addEventListener('click', transTop);
 
 function fetchHTML(e) {
     let xmlhr = new XMLHttpRequest();
