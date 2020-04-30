@@ -165,6 +165,10 @@ body {
 
 /* about.html */
 
+h1 {
+  text-align: center;
+}
+
 
 @media screen and (max-width: 1024px) {
   body {
