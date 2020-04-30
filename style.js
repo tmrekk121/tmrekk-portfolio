@@ -31,7 +31,7 @@ function fetchHTML(e) {
 function transTop() {
   document.getElementById("item-content").setAttribute("style", "animation: fadeOut 2s ease 0s 1 normal;\
   -webkit-animation: fadeOut 2s ease 0s 1 normal;");
-    document.getElementById("item-content").setAttribute("style", "display: none;");
+    document.getElementById("item-content").setAttribute("style", "width: 0; height: 0;");
     document.getElementById("slide").setAttribute("style", "display: block;");
     document.getElementById("okinawa-scenery").setAttribute("style", "display: block;");
 }
