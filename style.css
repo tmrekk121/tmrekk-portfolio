@@ -155,6 +155,8 @@ body {
   margin-top: 3%;
   display: flex;
   justify-content: space-between;
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
 
 .bottom-menu #introduce {
@@ -331,6 +333,14 @@ h1 {
   
   .work-div .work-title {
     font-size: 18px;
+  }
+  /* about.html */
+  .about-div {
+    margin-left: 0;
+  }
+
+  .about-div li{
+    text-align: left;
   }
 }
 
