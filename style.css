@@ -228,6 +228,15 @@ h1 {
   margin-right : 1%;
 }
 
+.about-div a{
+  color: #8F8F8F;
+  text-decoration: none;
+}
+
+.about-div a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1024px) {
   body {
     margin: 20% 10%;
