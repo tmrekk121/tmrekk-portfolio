@@ -29,5 +29,6 @@ function transTop() {
   document.getElementById("item-content").setAttribute("style", "display: none;");
   document.getElementById("slide").setAttribute("style", "display: block;");
   document.getElementById("introduce").setAttribute("style", "display: block;");
-  document.getElementById("okinawa-scenery").setAttribute("style", "display: block;");
+  // TODO: スマホサイズでのokinawa-sceneryを非表示にする
+  // document.getElementById("okinawa-scenery").setAttribute("style", "display: block;");
 }
