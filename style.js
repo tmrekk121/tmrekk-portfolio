@@ -1,11 +1,13 @@
 const about = document.getElementById('about');
 const works = document.getElementById('works');
+const title = document.getElementById('title');
 
 const about_path = "about.html";
 const works_path = "works.html";
 
 about.addEventListener('click', {file_path: about_path, handleEvent: fetchHTML});
 works.addEventListener('click', {file_path: works_path, handleEvent: fetchHTML});
+works.addEventListener('click', transTop);
 
 function fetchHTML(e) {
     let xmlhr = new XMLHttpRequest();
@@ -21,4 +23,9 @@ function fetchHTML(e) {
     }
     xmlhr.open("GET", this.file_path, true);
     xmlhr.send(null);
+}
+
+function transTop() {
+    document.getElementById("item-content").setAttribute("style", "display: none;");
+    document.getElementById("slide").setAttribute("style", "display: block;");
 }
