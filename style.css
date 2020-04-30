@@ -272,8 +272,9 @@ h1 {
   }
   /* works.html */
   .work-div {
+    width: 100%;
     display: block;
-    text-align: center;
+    margin: 15% auto;
   }
 
   .work-div p {
