@@ -16,6 +16,7 @@ function fetchHTML(e) {
             let content = xmlhr.responseText;
             document.getElementById("slide").setAttribute("style", "display: none;");
             document.getElementById("okinawa-scenery").setAttribute("style", "display: none;");
+            document.getElementById("introduce").setAttribute("style", "display: none;");
             document.getElementById("item-content").setAttribute("style", "display: block;");
             document.getElementById("item-content").innerHTML = content;
         }
@@ -27,5 +28,6 @@ function fetchHTML(e) {
 function transTop() {
   document.getElementById("item-content").setAttribute("style", "display: none;");
   document.getElementById("slide").setAttribute("style", "display: block;");
+  document.getElementById("introduce").setAttribute("style", "display: block;");
   document.getElementById("okinawa-scenery").setAttribute("style", "display: block;");
 }

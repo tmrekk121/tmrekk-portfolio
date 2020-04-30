@@ -157,7 +157,7 @@ body {
   justify-content: space-between;
 }
 
-.bottom-menu .introduce {
+.bottom-menu #introduce {
   margin-top: 5%;
   font-size: 20px;
   font-family: 'Caveat', cursive;
@@ -206,6 +206,9 @@ h1 {
   .list-item a{
     font-size: 30px;
   }
+  .list-item p{
+    font-size: 32px;
+  }
   .slide {
     height: 300px;
   }
@@ -222,6 +225,9 @@ h1 {
   .list-item a{
     font-size: 28px;
   }
+  .list-item p{
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -234,6 +240,10 @@ h1 {
 
   .list-item a{
     font-size: 16px;
+  }
+
+  .list-item p{
+    font-size: 18px;
   }
 
   .container {
@@ -263,6 +273,15 @@ h1 {
   /* works.html */
   .work-div {
     display: block;
+    text-align: center;
+  }
+
+  .work-div p {
+    font-size: 16px;
+  }
+  
+  .work-div .work-title {
+    font-size: 12px;
   }
 }
 
