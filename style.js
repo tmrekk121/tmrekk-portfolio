@@ -10,16 +10,14 @@ works.addEventListener('click', {file_path: works_path, handleEvent: fetchHTML})
 title.addEventListener('click', transTop);
 
 function fetchHTML(e) {
+    document.getElementById("item-content").setAttribute("style", "display: none;");
     let xmlhr = new XMLHttpRequest();
     xmlhr.onreadystatechange = function() {
         if (xmlhr.readyState == 4 && xmlhr.status==200) {
             let content = xmlhr.responseText;
-            document.getElementById("item-content").setAttribute("style", "display: none;");
             document.getElementById("slide").setAttribute("style", "display: none;");
             document.getElementById("okinawa-scenery").setAttribute("style", "display: none;");
             document.getElementById("item-content").setAttribute("style", "display: block;");
-            console.log(this.file_path);
-            console.log(content);
             document.getElementById("item-content").innerHTML = content;
         }
     }
