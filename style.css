@@ -27,6 +27,7 @@ body {
 #title {
   font-size: 40px;
   color: #414141;
+  cursor: pointer;
 }
 
 .list-item {
@@ -203,7 +204,7 @@ body {
   }
 
   .slide img {
-    width: 100%;
+    width: 95%;
     left: 0;
   }
 
