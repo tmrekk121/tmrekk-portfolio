@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Bottom from "./Bottom"
 
 export default class Layout extends React.Component {
   render() {
@@ -19,31 +20,22 @@ export default class Layout extends React.Component {
                 <a href="https://blog.tmrekk.dev">Blog.</a>
               </li>
             </ul>
-            <ul class="social-icon">
+            <ul className="social-icon">
               <li>
-                <a href="https://github.com/tmrekk121" target="_blank" rel="noopener noreferrer" class="github-icon-link">
-                  <i class="fab fa-github fa-2x fa-fw"></i>
+                <a href="https://github.com/tmrekk121" target="_blank" rel="noopener noreferrer" className="github-icon-link">
+                  <i className="fab fa-github fa-2x fa-fw"></i>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/tmrekk121" target="_blank" rel="noopener noreferrer" class="twitter-icon-link">
-                  <i class="fab fa-twitter fa-2x fa-fw"></i>
+                <a href="https://twitter.com/tmrekk121" target="_blank" rel="noopener noreferrer" className="twitter-icon-link">
+                  <i className="fab fa-twitter fa-2x fa-fw"></i>
                 </a>
               </li>
             </ul>
           </div>
-          <div id="item-content">
-            {this.props.children}
-          </div>
-          <div class="slide" id="slide">
-            <img src="images/flower.jpg" alt="Flower" />
-            <img src="images/leaf.jpg" alt="Leaf" />
-          </div>
+          {this.props.children}
         </div>
-        <div class="bottom-menu">
-          <p id="introduce">Kentaro Sudate. Web Engineer and ...</p>
-          <p id="okinawa-scenery">Okinawa scenery</p>
-        </div>
+        <Bottom />
       </div>
     );
   }
