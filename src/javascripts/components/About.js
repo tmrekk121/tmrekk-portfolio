@@ -3,10 +3,10 @@ import React from "react";
 export default class About extends React.Component {
   render() {
     return (
-      <div id="item-content">
+      <div className="item-content">
         <div className="about-div">
           <h2>Kentaro Sudate.</h2>
-          <p id="map-pin"><i className="fas fa-map-marker-alt"></i> Okinawa, Japan</p>
+          <p className="map-pin"><i className="fas fa-map-marker-alt"></i> Okinawa, Japan</p>
         </div>
 
         <div className="about-div">

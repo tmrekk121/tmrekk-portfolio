@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-body {
-  font-family: 'Pathway Gothic One', sans-serif;
-  background-color: #FDFAF8;
-  margin: 0 15%;
-  animation: fadeIn 2s ease 0s 1 normal;
-  -webkit-animation: fadeIn 2s ease 0s 1 normal;
-}
-
 @keyframes fadeIn {
   0% {opacity: 0}
   100% {opacity: 1}
@@ -30,109 +22,6 @@ body {
   100% {opacity: 0}
 }
 
-.container {
-  margin-top: 10%;
-  display: flex;
-  justify-content: space-around;
-}
-
-#title {
-  font-size: 40px;
-  color: #414141;
-  cursor: pointer;
-}
-
-.list-item {
- padding: 0;
-}
-
-.list-item li{
-  list-style: none;
-  /* margin-bottom: 8%; */
-  margin-bottom: 2%;
-}
-
-.list-item a{
-  color: #8F8F8F;
-  font-size: 25px;
-  letter-spacing: 3px;
-  text-decoration: none;
-}
-
-.list-item a:hover{
-  color: #414141;
-  text-decoration: underline;
-}
-
-.list-item p{
-  color: #8F8F8F;
-  font-size: 27px;
-  letter-spacing: 3px;
-  cursor: pointer;
-  margin: 0;
-}
-
-.list-item p:hover{
-  color: #414141;
-  text-decoration: underline;
-}
-
-
-.social-icon {
-  padding: 0;
-}
-
-.social-icon li{
-  list-style: none;
-  display: inline-block;
-}
-
-.social-icon a{
-  color: #414141;
-}
-
-.github-icon-link:hover {
-  color: #24292E;
-}
-
-.twitter-icon-link:hover {
-  color: #1DA1F2;
-}
-
-#item-content {
-  width: 100%;
-  height: 500px;
-  animation: fadeIn 2s ease 0s 1 normal;
-  -webkit-animation: fadeIn 2s ease 0s 1 normal;
-}
-
-.slide {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  animation: fadeIn 2s ease 0s 1 normal;
-  -webkit-animation: fadeIn 2s ease 0s 1 normal;
-}
-
-.slide img {
-  position: absolute;
-  top: 3%;
-  left: 18%;
-  width: 80%;
-  height: auto;
-  opacity: 0;
-  animation :slideshow 14s linear infinite;
-  padding: 7px;
-  border: 1px solid #ccc;
-  background: #fff;
-  box-shadow: 1px 1px 5px rgba(20,20,20,0.2);
-}
-
-.slide img:last-child{
-  animation-delay: 7s;
-}
-
 @keyframes slideshow {
   0%{
     opacity: 0;
@@ -151,34 +40,150 @@ body {
   }
 }
 
-.bottom-menu {
-  margin-top: 3%;
-  display: flex;
-  justify-content: space-between;
+body {
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-color: #FDFAF8;
+  margin: 0 15%;
   animation: fadeIn 2s ease 0s 1 normal;
   -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
 
-.bottom-menu #introduce {
+.container {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .menu-div {
+  margin-top: 3.5%;
+}
+
+.container .menu-div .title {
+  font-size: 40px;
+  color: #414141;
+  text-decoration: none;
+}
+
+.container .menu-div .title:hover {
+  text-decoration: underline;
+}
+
+.container .menu-div .list-item {
+ padding: 0;
+}
+
+.container .menu-div .list-item li{
+  list-style: none;
+  /* margin-bottom: 8%; */
+  margin-bottom: 2%;
+}
+
+.container .menu-div .list-item a{
+  color: #8F8F8F;
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.container .menu-div .list-item a:hover{
+  color: #414141;
+  text-decoration: underline;
+}
+
+.container .menu-div .list-item p{
+  color: #8F8F8F;
+  font-size: 27px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.container .menu-div .list-item p:hover{
+  color: #414141;
+  text-decoration: underline;
+}
+
+.container .menu-div .social-icon {
+  padding: 0;
+}
+
+.container .menu-div .social-icon li{
+  list-style: none;
+  display: inline-block;
+}
+
+.container .menu-div .social-icon a{
+  color: #414141;
+}
+
+.container .menu-div .social-icon .github-icon-link:hover {
+  color: #24292E;
+}
+
+.container .menu-div .social-icon .twitter-icon-link:hover {
+  color: #1DA1F2;
+}
+
+.container .slide {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+.container .slide img {
+  position: absolute;
+  top: 3%;
+  left: 18%;
+  width: 80%;
+  height: auto;
+  opacity: 0;
+  animation :slideshow 14s linear infinite;
+  padding: 7px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(20,20,20,0.2);
+}
+
+.container .slide img:last-child{
+  animation-delay: 7s;
+}
+
+.bottom-menu {
+  margin-top: 3%;
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+/* footer */
+
+.bottom-menu .introduce {
   margin-top: 5%;
   font-size: 20px;
   font-family: 'Caveat', cursive;
 }
 
-/* works.html */
+/* work about components */
 
-h1 {
-  text-align: center;
+.item-content {
+  width: 100%;
+  height: auto;
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
 
-.work-div {
+/* works components */
+
+.item-content .work-div {
   width: 35%;
   height: auto;
   display: inline-block;
   margin: 5% 5%;
 }
 
-.work-div .work-img {
+.item-content .work-div .work-img {
   width: 100%;
   height: 30%;
   padding: 7px;
@@ -187,75 +192,77 @@ h1 {
   box-shadow: 1px 1px 5px rgba(20,20,20,0.2);
 }
 
-.work-div p {
+.item-content .work-div p {
   text-align: center;
   color: #8F8F8F;
 }
 
-.work-div .work-title {
+.item-content .work-div .work-title {
   color: #101325;
 }
 
-/* about.html */
-.about-div {
+/* about components */
+
+.item-content .about-div {
   width: 100%;
   margin-left: 20%;
 }
-.about-div h2{
+
+.item-content .about-div h2{
   font-weight: 100;
   font-size: 40px;
   color: #101325;
   margin-bottom: 0;
 }
 
-.about-div #map-pin{
-  margin-top: 1%;
-}
-
-.about-div .about-p{
-  font-size: 22px;
-}
-
-.about-div p{
-  color: #8F8F8F;
-}
-
-.about-div .sub-title {
-  color: #101325;
-  font-size: 28px;
-  margin-bottom: 0;
-}
-
-.mgr-10{
-  margin-right : 1%;
-}
-
-.about-div a{
+.item-content .about-div a{
   font-size: 22px;
   color: #8F8F8F;
   text-decoration: none;
 }
 
-.about-div a:hover {
+.item-content .about-div p{
+  color: #8F8F8F;
+}
+
+.item-content .about-div a:hover {
   color: #101325;
   text-decoration: underline;
+}
+
+.item-content .about-div .map-pin{
+  margin-top: 1%;
+}
+
+.item-content .about-div .about-p{
+  font-size: 22px;
+}
+
+.item-content .about-div .sub-title {
+  color: #101325;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.item-content .about-div .about-p .mgr-10{
+  margin-right : 1%;
 }
 
 @media screen and (max-width: 1024px) {
   body {
     margin: 20% 10%;
   }
-  #title {
+  .container .menu-div .title {
     font-size: 35px;
     color: #414141;
   }
-  .list-item a{
+  .container .menu-div .list-item a{
     font-size: 30px;
   }
-  .list-item p{
+  .container .menu-div .list-item p{
     font-size: 32px;
   }
-  .slide {
+  .container .slide {
     height: 300px;
   }
 }
@@ -264,14 +271,14 @@ h1 {
   body {
     margin: 30% 5%;
   }
-  #title {
+  .container .menu-div .title {
     font-size: 33px;
     color: #414141;
   }
-  .list-item a{
+  .container .menu-div .list-item a{
     font-size: 28px;
   }
-  .list-item p{
+  .container .menu-div .list-item p{
     font-size: 30px;
   }
 }
@@ -280,72 +287,70 @@ h1 {
   body {
     margin: 9% 5%;
   }
-  #title {
-    font-size: 30px;
-  }
-
-  .list-item a{
-    font-size: 18px;
-  }
-
-  .list-item p{
-    font-size: 18px;
-  }
 
   .container {
     margin-top: 5%;
     display: block;
     text-align: center;
   }
+  
+  .container .menu-div .title {
+    font-size: 30px;
+  }
 
-  .list-item li{
+  .container .menu-div .list-item a{
+    font-size: 18px;
+  }
+
+  .container .menu-div .list-item p{
+    font-size: 18px;
+  }
+
+  .container .menu-div .list-item li{
     list-style: none;
     display: inline-block;
   }
 
-  .social-icon li{
+  .container .menu-div .social-icon li{
     font-size: 10px;
     padding: 3% 5%;
   }
 
-  .slide img {
+  .container .slide img {
     width: 95%;
     left: 0;
   }
 
-  #okinawa-scenery {
-    display: none;
-  }
-  /* works.html */
+  /* works components */
 
-  #item-content {
-    width: 95%;
-  }
-  .work-div {
+  .item-content .work-div {
     width: 100%;
     display: block;
     margin: 15% auto;
   }
 
-  .work-div p {
+  .item-content .work-div p {
     font-size: 16px;
   }
   
-  .work-div .work-title {
+  .item-content .work-div .work-title {
     font-size: 18px;
   }
-  /* about.html */
-  .about-div {
+  /* about components */
+
+  .item-content {
+    width: 95%;
+  }
+
+  .item-content .about-div {
     margin-left: 0;
   }
 
-  .about-div ul{
+  .item-content .about-div ul{
     margin-left: 10%;
   }
 
-  .about-div li{
+  .item-content .about-div li{
     text-align: left;
   }
 }
-
-

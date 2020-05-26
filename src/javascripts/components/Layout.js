@@ -7,14 +7,14 @@ export default class Layout extends React.Component {
     return (
       <div>
         <div className="container">
-          <div>
-            <h2 id="title">tmrekk.dev</h2>
+          <div className="menu-div">
+            <Link to="/" className="title" >tmrekk.dev</Link>
             <ul className="list-item">
               <li>
-                <Link to="about" id="about" >About</Link>
+                <Link to="about" >About</Link>
               </li>
               <li>
-                <Link to="works" id="works" >Works</Link>
+                <Link to="works" >Works</Link>
               </li>
               <li>
                 <a href="https://blog.tmrekk.dev">Blog.</a>

@@ -3,7 +3,7 @@ import React from "react";
 export default class Works extends React.Component {
   render() {
     return (
-      <div id="item-content">
+      <div className="item-content">
         <div className="work-div">
           <img src="images/portfolio.jpg" alt="portfolio" className="work-img" />
           <p className="work-title">Portfolio Site</p>
