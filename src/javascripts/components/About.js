@@ -12,6 +12,7 @@ export default class About extends React.Component {
         <div className="about-div">
           <p className="sub-title">Biography.</p>
           <p className="about-p"><span className="mgr-10">1999</span> Born in Miyazaki, Japan.</p>
+          <p className="about-p"><span className="mgr-10">2017</span> Entered the University of the Ryukyus.</p>
         </div>
 
         <div className="about-div">
