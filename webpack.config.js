@@ -21,11 +21,6 @@ module.exports = {
       path: __dirname + "/src/",
       filename: "client.min.js"
     },
-    devServer: {
-        historyApiFallback: {
-          index: 'index.html'
-        }
-    },
     plugins: debug ? [] : [
       new webpack.optimize.OccurrenceOrderPlugin(),
       new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
