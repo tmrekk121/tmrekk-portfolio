@@ -22,7 +22,9 @@ module.exports = {
       filename: "client.min.js"
     },
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: {
+          index: 'index.html'
+        }
     },
     plugins: debug ? [] : [
       new webpack.optimize.OccurrenceOrderPlugin(),
