@@ -14,7 +14,8 @@ export default class Works extends React.Component {
             images/flower_gjmhn8_c_scale,w_1283.jpg 1283w,
             images/flower_gjmhn8_c_scale,w_1400.jpg 1400w"
             src="images/flower_gjmhn8_c_scale,w_1400.jpg"
-            alt="Flower" />
+            alt="Flower"
+            decoding="async" />
           <img
             sizes="(max-width: 1400px) 100vw, 1400px"
             srcSet="
@@ -23,7 +24,8 @@ export default class Works extends React.Component {
             images/leaf_kuvfb0_c_scale,w_1198.jpg 1198w,
             images/leaf_kuvfb0_c_scale,w_1400.jpg 1400w"
             src="images/leaf_kuvfb0_c_scale,w_1400.jpg"
-            alt="Leaf" />
+            alt="Leaf"
+            decoding="async" />
         </div>
     );
   }
